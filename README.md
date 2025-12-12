@@ -104,6 +104,17 @@ vim ~/.ssh/authorized_keys
 ssh -p 5555 ubuntu@localhost
 
 
+# Note the following like in Makefile
+
+# --- ADD THIS SECTION ---
+# This generates rust-project.json for your IDE
+rust-analyzer:
+	$(MAKE) LLVM=1 -C $(KDIR) M=$$PWD rust-analyzer
+
+# do:
+make rust-analyzer
+
+
 if one working over vscode
 
 
