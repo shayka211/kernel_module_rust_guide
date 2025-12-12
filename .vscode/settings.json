@@ -1,0 +1,13 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "rust-project.json"
+    ],
+    // CRITICAL: Prevent rust-analyzer from looking for the standard library.
+    "rust-analyzer.cargo.sysroot": null, 
+    
+    // 1. Enable checking on save (must be a boolean: true or false)
+    "rust-analyzer.checkOnSave": true, 
+
+    // 2. Define the tool to use when checking (e.g., "clippy" for linting)
+    "rust-analyzer.check.command": "clippy"
+}
